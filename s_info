@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+prev_pwd=$PWD
+cd "$(dirname "$0")"
+source env/bin/activate
+python ./sysinfo.py
+deactivate
+cd $prev_pwd
